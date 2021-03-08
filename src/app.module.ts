@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Lesson } from './lesson/lesson.entity';
+import { GraphQLModule } from '@nestjs/graphql';
 import { LessonModule } from './lesson/lesson.module';
+import { Lesson } from './lesson/lesson.entity';
 import { Student } from './student/student.entity';
 import { StudentModule } from './student/student.module';
 
@@ -21,7 +21,5 @@ import { StudentModule } from './student/student.module';
     LessonModule,
     StudentModule,
   ],
-  controllers: [],
-  providers: [],
 })
 export class AppModule {}
